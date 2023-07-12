@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <title>Sign-up Form</title>
+</head>
+<body>
+    <div class="container">
+        <div class="image-container">
+              <div class="overlay"></div> 
+              <img src="images/footprint-background.jpg" class="background-image" alt="dog-footprints">        
+              <div class="logo-container">
+                  <img src="images/Saint Bernard Club.png" class="logo"alt="Saint-Bernard">
+                   <h1 class="logo">Saint Bernard Club</h1>
+              </div>
+        </div>
+        <div class="right-container">
+            <div class="form-header">
+            <p class="right-text">If you are a Saint Bernard lover, then this is the 
+                place for you. Each member will receive a weekly email newsletter with 
+                fun facts and resources. Sign up <span>now</span> to get your first newsletter!
+            </p>
+            <p class="right-text">You <span>know</span> you want to!</p>
+            </div>
+            <div class="form-container">
+            <form class="sign-up-form" action="#" method="get">
+            <h1 class="form-heading">Don't wait, sign up below!</h1>
+            <div class="form-row">
+                <div class="form-column">
+                    <label for="first-name">First Name</label>
+                    <input type="text" id="first-name" name="first-name" max-length="15" required>
+                    <div class="error">*Please enter valid input.</div>
+                </div>
+                <div class="form-column">
+                    <label for="last-name">Last Name</label>
+                    <input type="text" id="last-name" name="last-name" max-length="15" required>
+                    <div class="error">*Please enter valid input.</div>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-column">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                    <div class="error">*Please enter valid input.</div>
+                </div>
+                <div class="form-column">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" min-length required>
+                    <div class="error">*Please enter valid input.</div>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-column">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                    <div class="error">*Passwords must match.</div>
+                </div>
+                <div class="form-column">
+                    <label for="confirm-password">Confirm Password</label>
+                    <input type="password" id="confirm-password" name="confirm-password" required>
+                    <div class="error">*Passwords must match.</div>
+                </div>
+            </div>
+          </form>
+        <div class="submit-area">
+          <button class="acct-button" type="submit">Create Account</button>
+          <p class="login" type="submit">Already have an account? 
+            <button class="login-button">Log in</button></p>
+        </div>
+        </div>
+        </div>
+    </div>
+</body>
+</html>
