@@ -71,6 +71,7 @@ body {
     margin-left: -200px;
 
  }
+
  .logo-container h1 {
     margin-left: -160px; 
     font-family: 'Shadows Into Light', cursive;
@@ -89,7 +90,6 @@ body {
     height: 30vh;
     
  }
-
 
  .right-text {
     font-size: 24px;
@@ -166,15 +166,15 @@ input:focus {
     display: none;
 }
 
-input:invalid + .error {
-    display: block;
-    margin-top: 5px;
-}
-
-input:valid + .error {
+#successMessage {
+    color: rgb(67, 214, 67);
     display: none;
 }
 
+.invalid input:invalid + .error {
+    display: block;
+    margin-top: 5px;
+}
 
 @media (max-width: 1000px) {
     .container {

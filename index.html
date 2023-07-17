@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="javascript.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
@@ -28,49 +29,53 @@
             <p class="right-text">You <span>know</span> you want to!</p>
             </div>
             <div class="form-container">
-            <form class="sign-up-form" action="#" method="get">
+            <form class="sign-up-form" id="signup-form" action="#" method="get">
             <h1 class="form-heading">Don't wait, sign up below!</h1>
             <div class="form-row">
                 <div class="form-column">
                     <label for="first-name">First Name</label>
-                    <input type="text" id="first-name" name="first-name" max-length="15" required>
+                    <input type="text" id="first-name" name="first-name" maxlength="15" pattern="[A-Z, a-z]*" required>
                     <div class="error">*Please enter valid input.</div>
                 </div>
                 <div class="form-column">
                     <label for="last-name">Last Name</label>
-                    <input type="text" id="last-name" name="last-name" max-length="15" required>
+                    <input type="text" id="last-name" name="last-name" maxlength="15" pattern="[A-Z, a-z]*" required>
                     <div class="error">*Please enter valid input.</div>
                 </div>
             </div>
             <div class="form-row">
                 <div class="form-column">
                     <label for="email">Email</label>
-                    <input type="email" id="email" name="email" required>
+                    <input type="email" id="email" name="email" maxlength="25" required>
                     <div class="error">*Please enter valid input.</div>
                 </div>
                 <div class="form-column">
                     <label for="phone">Phone Number</label>
-                    <input type="tel" id="phone" name="phone" min-length required>
+                    <input type="tel" id="phone" name="phone" minlength="10" maxlength="10" pattern="[0-9]*" required>
                     <div class="error">*Please enter valid input.</div>
                 </div>
             </div>
             <div class="form-row">
                 <div class="form-column">
                     <label for="password">Password</label>
-                    <input type="password" id="password" name="password" required>
+                    <input type="password" id="password" name="password" minlength="8" maxlength="12" required>
                     <div class="error">*Passwords must match.</div>
+                    <div class="error">*Must be 8-12 characters.</div>
                 </div>
                 <div class="form-column">
                     <label for="confirm-password">Confirm Password</label>
-                    <input type="password" id="confirm-password" name="confirm-password" required>
+                    <input type="password" id="confirm-password" name="confirm-password" minlength="8" maxlength="12" required>
                     <div class="error">*Passwords must match.</div>
                 </div>
             </div>
+            <p class="success-message" id="successMessage">Account Successfully Created! Click the 
+                Log in button to login to your new account.</p>
           </form>
         <div class="submit-area">
           <button class="acct-button" type="submit">Create Account</button>
           <p class="login" type="submit">Already have an account? 
             <button class="login-button">Log in</button></p>
+    
         </div>
         </div>
         </div>
